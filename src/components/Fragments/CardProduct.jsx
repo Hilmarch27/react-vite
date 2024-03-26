@@ -11,9 +11,9 @@ const CardProduct = (props) => {
 };
 
 const Header = (props) => {
-  const { image } = props;
+  const { id, image } = props;
   return (
-    <Link to="">
+    <Link to={`/products/${id}`}>
       <img
         src={image}
         alt="product"
